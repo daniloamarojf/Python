@@ -1,16 +1,15 @@
 # Testando os comandos do python
 # Dia: 15/04/2024
 
-print('*' * 70 )
-print('               Danilo Rogerio Magalhães Amaro              ')
-print('*' * 70)
-
 # Importando biblioteca
 import os
 
 
-# Limpar terminal
 os.system('cls')
+
+print('*' * 70 )
+print('               Danilo Rogerio Magalhães Amaro              ')
+print('*' * 70)
 
 # Dados pessoais
 
