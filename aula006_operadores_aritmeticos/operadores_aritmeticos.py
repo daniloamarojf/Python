@@ -23,8 +23,8 @@ subtraendo = float(input('Entre com o subtraendo: '))
 print()
 print('---PRODUTO')
 print('-'*70)
-multiplicando = folat(input('Entre com o multiplicando: '))
-multiplicador = float(input('Entre com o multiplicador'))
+multiplicando = float(input('Entre com o multiplicando: '))
+multiplicador = float(input('Entre com o multiplicador: '))
 
 print()
 print('---DIVISÃO')
@@ -32,20 +32,36 @@ print('-'*70)
 dividendo = float(input('Entre com o dividendo: '))
 divisor = float(input('Entre com o divisor: '))
 
+print()
+print('---RAIZ QUADRADA')
+print('-'*70)
+radicando_quadrado = float(input('Entre com o radicando: '))
+
+print()
+print('---RAIZ CUBICA')
+print('-'*70)
+radicando_cubico = float(input('Entre com o radicando: '))
+
+
 # Processamento
 soma = parcela_01 + parcela_02
 diferenca = minuendo - subtraendo
 produto = multiplicando * multiplicador
 quociente = dividendo / divisor
+raiz_quadrada = radicando_quadrado ** 1/2
+raiz_cubica = radicando_cubico ** 1/3
 
 # Saida
 print('='*70)
 print('RESULTADOS')
 print('-'*70)
-print(f'A soma de {parcela_01} + {parcela_02} é: {soma})
-print(f'A subtração de {minuendo} - {subtraendo} é: {diferenca})
-print(f'A multiplicaçao de {multiplicando} x {multiplicador} é: {produto})
- 
+print(f'A soma de {parcela_01} + {parcela_02} é: {soma}')
+print(f'A subtração de {minuendo} - {subtraendo} é: {diferenca}')
+print(f'A multiplicaçao de {multiplicando} x {multiplicador} é: {produto}')
+print(f'A divisão de {dividendo} ÷ {divisor} é: {quociente}')
+print(f'A raiz quadrada de {radicando_quadrado} é: {raiz_quadrada}')
+print(f'A raiz cubica de {radicando_cubico} é: {raiz_cubica}')
+       
  # Seguindo os passos anteriores, desenvolva o restante
-print(f'A divisão de {dividendo} ÷ {divisor} é: {quociente})
- # Acrescente a raiz quadrada e a raiz cubica     
+ # Acrescente a raiz quadrada e a raiz cubica   
+  
