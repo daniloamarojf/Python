@@ -10,18 +10,26 @@ import os
 
 os.system('cls')
 
-# Entrada de dados
+# Cabeçalho
 print('.'*70)
 print('Calculos de raizes da equação')
 print('.'*70)
 print()
-x1 = 5
-x2 = 1
+
+# Declarações
+a = 1
+b = -6
+c = 5
+delta = ((b ** 2)-(4 * a * c)) 
+delta_elevado = delta ** 0.5
 
 # Condicionais
-# 𝑥²−6𝑥+5    𝑥’ = 5 e 𝑥’’ = 1
-# a = 1  b = 6  c = 5
-# Delta = b2 - 4ac
-# 36 - 30 = 16
-# x = - b +- raiz Delta/2*a
+x = (-b + (delta ** 0.5)) / (2 * a)
+x1 = (-b - (delta ** 0.5)) / (2 * a)
 
+
+print('-'*70)
+print(f'Resultado de x é: {x}')
+print(f'Resultado de x1 é {x1}')
+print('-'*70)
+print('Fim do Programa')
