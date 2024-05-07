@@ -24,3 +24,4 @@ ano_nascimento = input(int(f'Qual ano de nascimento: '))
 ano_atual = datetime.datetime.now().year
 idade = ano_atual - ano_nascimento
 
+
