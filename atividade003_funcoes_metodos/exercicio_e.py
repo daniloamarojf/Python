@@ -1,0 +1,1 @@
+# Faça um programa para sortear um número de 1 a 20.

@@ -15,7 +15,7 @@ data = datetime.now()
 data_formatada = date.strftime('%d/%m/%Y')
 
 # Declaração de uma variavel data e hora formatada
-data_hora_formatada = date.strftime('%d/%m/%Y %M:%M')
+data_hora_formatada = date.strftime('%d/%m/%Y %H:%M')
 
 print(f'Data formatada : {data_formatada}')
 print(f'Data e hora formatadas: {data_hora_formatada}')

@@ -1,0 +1,1 @@
+# Faça um programa que receba as informações de base e expoente. Calcule a potência.
