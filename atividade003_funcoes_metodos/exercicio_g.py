@@ -17,7 +17,7 @@ c = int(input('Valor c: '))
 # Processamento
 b2 = math.pow(b, 2)
 delta = b2 - (4 * a * c)
-raiz_delta = math.sqrt(delta) # deve maior que 0
+raiz_delta = math.sqrt(delta) # deve maior que 0    
 x1 = ((-b + raiz_delta) / (2 * a))
 x2 = ((-b - raiz_delta) / (2 * a))
 
