@@ -21,8 +21,10 @@ quantidade_o = frase.count(o)
 quantidade_u = frase.count(u)
 
 # saida de dados
+print('-'*70)
 print(f'Esta frase possui {quantidade_a} vogais "a".')
 print(f'Esta frase possui {quantidade_e} vogais "e".')
 print(f'Esta frase possui {quantidade_i} vogais "i".')
 print(f'Esta frase possui {quantidade_o} vogais "o".')
 print(f'Esta frase possui {quantidade_u} vogais "u".')
+print('-'*70)

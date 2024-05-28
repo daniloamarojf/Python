@@ -10,7 +10,10 @@ os.system('cls')
 # Entrada de dados
 nome = str(input('Digite o nome completo: '))
 lista = nome.split(' ')
+nomes_separados = "\n".join(lista)
 
-print(f'{lista}')
-for i in lista:
-    print(i)
+print()
+print('-'*70)
+print('Listando os nomes separadamente:')
+print(f'{nomes_separados}')
+print('-'*70)

@@ -12,8 +12,10 @@ respota1 = True
 reposta2 = False
 
 print()
+print('-'*70)
 print(f'O nome "{nome}" contem "Oliveira"?')
 if 'Oliveira' in nome:
     print(f'Resposta: {respota1} ')
 else:
     print(f'Resposta: {reposta2}')
+print('-'*70)

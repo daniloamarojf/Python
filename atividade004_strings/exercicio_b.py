@@ -12,5 +12,7 @@ nome = 'João da Silva'
 novo_nome = nome.replace('Silva', 'Oliveira')
 
 # saida
+print('-'*70)
 print(f'Nome: {nome}')
 print(f'Novo nome: {novo_nome}')
+print('-'*70)
