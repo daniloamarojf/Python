@@ -7,15 +7,14 @@ import os
 
 os.system('cls')
 
-frase = input('Frase: ')
-frase1 = frase.upper()
+frase = input('Frase: ').upper()
 frase_inverso = frase[::-1].upper()
 print()
-print(f'Frase original: {frase1}')
+print(f'Frase original: {frase}')
 print(f'Frase inversa: {frase_inverso}')
 print()
 
-if frase1 in frase_inverso:
+if frase in frase_inverso:
     print('Texto "é" um polídromo')
 else:
     print('Texto "não" é polídromo')
