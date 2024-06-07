@@ -13,7 +13,7 @@ os.system('cls')
 # Entrada de dados
 valor1 = float(input('Digite o 1º valor: '))
 valor2 = float(input('Digite o 2º valor: '))
-
+divisao = valor1 / valor2
 
 if valor2 == 0:
     print(f'Valor deve ser diferente de 0')
@@ -23,7 +23,7 @@ else:
     print(f'Resultado da divisão é :{divisao}')
     
 # Processamento
-divisao = valor1 / valor2
+
 arredondar_cima = math.ceil(divisao)
 arredondar_baixo = math.floor(divisao)
 
