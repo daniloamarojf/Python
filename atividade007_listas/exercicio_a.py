@@ -8,6 +8,10 @@
 
 import os
 
+soma = 0
+contador = 1
+lista = []
+lista_reversa = []
 
 os.system('cls')
 
@@ -17,3 +21,23 @@ while True:
     if notas == '0' or notas == 's':
         print('Fim do programa!')
         break
+    
+    contador += 1
+    print(f'Foram incluidas {contador} notas.')    
+    
+    if 
+    lista = notas.split()
+    
+    print(f'Notas: {lista}')
+    
+    '''if i in lista:
+    
+    lista.append(i)
+    
+    
+    
+    lista_reversa.reverse(lista)
+    
+
+print(f'Notas {lista}')
+print(f'A lista reversa é {lista_reversa}')'''
