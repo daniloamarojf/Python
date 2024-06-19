@@ -15,5 +15,5 @@ for var_iteradora in range(0, 101):
         print(f'{var_iteradora}', end=" | ")
     
     
-print(f'A soma dos números é: {soma}')
+print(f'A quantidade dos números é: {soma}')
     

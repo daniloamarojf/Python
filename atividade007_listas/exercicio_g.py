@@ -17,9 +17,21 @@ print('-'*50)
 print('MEGA SENA')
 print('-'*50)
 
-for i in range(1, 60):
+for i in range(1, 7):          
     
-    numeros = random.randint(1, 500)
+    numeros = random.randint(1, 60)
     lista.append(numeros)
     
-    # mostrar os numeros um após o outro de acordo com os indices
+    print(f'{i}º número sorteado: {numeros}')
+
+print('-'*50)
+print('LOTO FÁCIL')
+print('-'*50)
+
+for i in range(1, 15):
+    
+    numeros = random.randint(1, 25)     # FUNÇÃO ESTA REPETINDO NUMERO
+    lista.append(numeros)
+    
+    print(f'{i}º número sorteado: {numeros}')
+  
