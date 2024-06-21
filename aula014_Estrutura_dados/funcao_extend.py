@@ -4,7 +4,7 @@ import os
 os.system('cls')
 
 # inicializa a lista vazia
-lista_numeros = []
+lista_numeros = [10, 20]
 
 # Solicita ao usuario que insira números separados por espaços
 entrada = input('Digite números separados por espaços: ')

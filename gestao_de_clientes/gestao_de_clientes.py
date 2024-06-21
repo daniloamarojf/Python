@@ -6,6 +6,7 @@ os.system('cls')
 print('Tipo de cliente: [1] Pessoa física [2] Pessoa juridica')
 print()
 
+# Condição para escolher se é cliente fisico ou juridico
 while (True):
     cliente = int(input('Tipo cliente....................................: '))
     
@@ -24,7 +25,14 @@ print(f'Cliente.........................................: {cliente}')
 # Cadastro de Cliente Pessoa Fisica
 
 nome = str(input('Nome............................................: '))
+
 cpf = int(input('CPF.............................................: '))
+
+while len(cpf) != 11:
+    print('Cpf deve conter 11 digitos')
+    
+
+# validado gênero
 while (True):
     genero = str(input('Gênero M - Masculino | F - Feminino | O - Outros: ')).upper()
     
