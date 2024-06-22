@@ -1,4 +1,5 @@
 import os
+import re
 
 
 os.system('cls')
@@ -26,11 +27,18 @@ print(f'Cliente.........................................: {cliente}')
 
 nome = str(input('Nome............................................: '))
 
-cpf = int(input('CPF.............................................: '))
+cpf_lista = []
 
-while len(cpf) != 11:
-    print('Cpf deve conter 11 digitos')
-    
+while True:
+    cpf = input('CPF.............................................: ')
+    if not cpf.isdigit() or len(cpf) != 11:  
+        print('CPF inválido!')
+        continue
+
+    cpf_lista.append(cpf)
+    # cep = input('cep: ')
+    break
+
 
 # validado gênero
 while (True):
