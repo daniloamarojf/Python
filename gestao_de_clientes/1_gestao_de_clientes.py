@@ -59,34 +59,32 @@ while (True):
     else:
         print('invalido...') 
     
-  
+cep_fisica_f = []  
+while True:
+    cep_fisica = input('CEP.......................: ')
+    if not cep_fisica.isdigit() or len.cep_fisica != 8:
+        print('CEP invalido') 
+        continue
+    
+        
+    
+    cep_fisica_f = '{}-{}'.format(cep_fisica[:5], cep_fisica[5:])
+    print(f'{cep_fisica_f}')
+    break
+    
+    
+    
+rua_fisica = str(input('Rua: '))
 
-cep_fisica = input('CEP.......................: ')
-cep_fisica_f = '{}-{}'.format(cep_fisica[:5], cep_fisica[5:])
-print(f'{cep_fisica_f}')
-'''rua_fisica = str(input('Rua: '))
-numero_fisica = str(input('Numero: '))
-complemeto_fisica = input('Complemento: ')
+numero_fisica = int(input('Numero: '))
+
+complemeto_fisica = str(input('Complemento: '))
 bairro_fisica = input('Bairro: ')
 cidade_fisica = input('Cidade: ')
 uf_fisica = input('UF: ')
 data_nascimento = int(input('Data de nascimento: '))
 email_fisica = str(input('E-mail:'))
 
-# cadastro de pessoa juridica
-razao_social = str(input('Razão Social: '))
-Nome_fantasia = str(input('Nome Fantasia: '))
-cnpj = int(input('CNPJ: '))
-atividade = str(input('Atividadde econômica: '))
-cep_juridica = input('CEP: ')
-rua_juridica = str(input('Rua: '))
-numero_juridica = str(input('Numero: '))
-complemeto_juridica = input('Complemento: ')
-bairro_juridica = input('Bairro: ')
-cidade_juridica = input('Cidade: ')
-uf_juridica = input('UF: ')
-data_fundação = int(input('Data de fundação: '))
-email_juridica = str(input('E-mail:'))
+
 
 # perguntas para perfil do cliente
-'''
