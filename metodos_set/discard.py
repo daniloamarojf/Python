@@ -11,18 +11,33 @@ import os
 
 os.system('cls')
 
-doacoes = []
-
 print('-'*50)
 print(" LISTA DE DOAÇÕES ")
 print('-'*50)
 
+doacoes = set([])
+itens_remover = set([])
+
 for i in range(3):
     item = (input(f'{i + 1} -  '))
-    doacoes.append(item)
-    
+    doacoes.add(item)
+
+print()    
+print('-'*50)
+print('INFORME OS INTENS JÁ DOADOS')
+print('-'*50)
+print()
 print(doacoes)
 
 while True:
-    remover = input('Itens já doados: ')
-    doacoes.discard(remover)
+    
+    remover = input('Itens já doados: ').lower
+    itens_remover.add(remover)
+    
+    for itens_remover in doacoes:    
+        doacoes.discard(itens_remover)
+    else:
+        print('fim')
+    break
+    
+print(doacoes)
