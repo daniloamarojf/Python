@@ -29,15 +29,26 @@ print('-'*50)
 print()
 print(doacoes)
 
+
+
+
+
+
 while True:
     
-    remover = input('Itens já doados: ').lower
-    itens_remover.add(remover)
+    remover = input('Itens já doados: ')
     
-    for itens_remover in doacoes:    
-        doacoes.discard(itens_remover)
-    else:
-        print('fim')
-    break
+   
+    for remover in list(doacoes): 
+        
+        if remover != 0: 
+            doacoes.discard(remover)
+        
+        else:
+            print('fim')
+        
+        break
     
-print(doacoes)
+    
+    
+    print(doacoes)
