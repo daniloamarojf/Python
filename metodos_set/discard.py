@@ -12,43 +12,39 @@ import os
 os.system('cls')
 
 print('-'*50)
-print(" LISTA DE DOAÇÕES ")
+print(" RIFA  Números disponíveis")
 print('-'*50)
 
-doacoes = set([])
-itens_remover = set([])
+rifa = set([1, 2, 3, 5, 6, 7, 8, 9, 10])
 
-for i in range(3):
-    item = (input(f'{i + 1} -  '))
-    doacoes.add(item)
-
+print()
+print(rifa)
 print()    
 print('-'*50)
-print('INFORME OS INTENS JÁ DOADOS')
+print('INFORME OS NÚMEROS VENDIDOS')
 print('-'*50)
 print()
-print(doacoes)
 
-
-
-
-
-
-while True:
-    
-    remover = input('Itens já doados: ')
+ 
     
    
-    for remover in list(doacoes): 
+for i in range (10): 
         
-        if remover != 0: 
-            doacoes.discard(remover)
-        
-        else:
-            print('fim')
-        
+    num = int(input('Números vendidos: '))
+    
+    if num == 0:
+        print()
+        print('-'*50) 
+        print('RIFA - Lista Atualizada')
+        print('-'*50)
+        print()
         break
+    else:
+         
+        rifa.discard(num)
+   
     
     
     
-    print(doacoes)
+print(rifa)
+print()
