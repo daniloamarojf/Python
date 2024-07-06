@@ -8,13 +8,14 @@ print('-'*50)
 print('DICIONÁRIO DE FRUTAS')
 print('-'*50)
 
+
 frutas = {}
 frutas_valor = {}
 
 for i in range(5):
     # Adicionando Chaves:valor ao dicionário
     chave = (f'Fruta{i+1}')
-    valor = (input(f'Digite Fruta{i+1}: ')).upper
+    valor = (input(f'Digite Fruta{i+1}: ')).lower()
     frutas[chave] = valor
     
     frutas_valor = frutas.values() 
@@ -28,7 +29,7 @@ print()
 if 'abacaxi' in frutas_valor:
     print(f'------> Contém Abacaxi na lista.')
 else:
-    print('------> Não contém abacaxi na lista.')  
+    print('------> Não contém Abacaxi na lista.')  
  
 
    
