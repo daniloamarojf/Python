@@ -62,10 +62,15 @@ while (True):
 cep_fisica_f = []  
 while True:
     cep_fisica = input('CEP.......................: ')
-    if not cep_fisica.isdigit() or len.cep_fisica != 8:
-        print('CEP invalido') 
+    posicao = cep_fisica.find('-')
+    
+    if (not (cep_fisica.isdigit())) or len(cep_fisica) != 9 and posicao != 5:
+        print('CEP invalido. Formato deve ser 00000-000') 
         continue
     
+    cep_fisica_f.append(cep_fisica)
+    
+    break
         
     
     cep_fisica_f = '{}-{}'.format(cep_fisica[:5], cep_fisica[5:])
