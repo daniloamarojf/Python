@@ -1,5 +1,4 @@
 import os
-import re
 
 
 os.system('cls')
@@ -59,36 +58,37 @@ while (True):
     else:
         print('invalido...') 
     
-cep_fisica_f = []  
+cep_lista = []  
 while True:
-    cep_fisica = input('CEP.......................: ')
-    posicao = cep_fisica.find('-')
+    cep = input('CEP.......................: ')
+    posicao = cep.find('-')
     
-    if (not (cep_fisica.isdigit())) or len(cep_fisica) != 9 and posicao != 5:
-        print('CEP invalido. Formato deve ser 00000-000') 
+    if (not cep.isdigit) or len(cep) != 9 or posicao != 5:
+        print('"CEP" invalido. Formato deve ser 00000-000') 
         continue
     
-    cep_fisica_f.append(cep_fisica)
+    cep_lista.append(cep)
     
     break
-        
+
+rua_lista = []
+
+while True:           
+    rua = str(input('Rua: ')).capitalize()
+    if len(rua) == 0:
+        print('Digite o nome da rua') 
+        continue
     
-    cep_fisica_f = '{}-{}'.format(cep_fisica[:5], cep_fisica[5:])
-    print(f'{cep_fisica_f}')
     break
     
-    
-    
-rua_fisica = str(input('Rua: '))
+numero = int(input('Numero: '))
 
-numero_fisica = int(input('Numero: '))
-
-complemeto_fisica = str(input('Complemento: '))
-bairro_fisica = input('Bairro: ')
-cidade_fisica = input('Cidade: ')
-uf_fisica = input('UF: ')
+complemeto = str(input('Complemento: '))
+bairro = input('Bairro: ')
+cidade = input('Cidade: ')
+uf = input('UF: ')
 data_nascimento = int(input('Data de nascimento: '))
-email_fisica = str(input('E-mail:'))
+email = str(input('E-mail:'))
 
 
 

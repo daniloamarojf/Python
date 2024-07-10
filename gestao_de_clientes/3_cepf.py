@@ -9,7 +9,7 @@ while True:
     cep_fisica = input('CEP.......................: ')
     posicao = cep_fisica.find('-')
     
-    if len(cep_fisica) != 9 and posicao != 5:
+    if (not cep_fisica.isdigit) or len(cep_fisica) != 9 or posicao != 5:
         print('CEP invalido. Formato deve ser 00000-000') 
         continue
     
