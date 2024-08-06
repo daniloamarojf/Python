@@ -29,5 +29,5 @@ for num in range(2):
         else:
             print('Número ivalido!')
             
-while:
+# while:
     
