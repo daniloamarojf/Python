@@ -34,3 +34,5 @@ def verificar_aluno(nome):
     else:
         print('nao')
     return nome
+
+verificar_aluno(aluno)
