@@ -5,13 +5,17 @@ import os
 
 os.system('cls')
 
+print('-'*50)
+print('Calculando o IMC')
+print('-'*50)
+
 def retornar_imc(altura, peso):
     
     imc = peso / (altura**2)
-    print(f'{imc:.2f}')
+    print(f'O Índice de Massa Corporal é: {imc:.2f}')
     return(imc)
 
-altura = float(input('Altura: '))
-peso = float(input('Peso: '))
+altura = float(input('Informe sua Altura: '))
+peso = float(input('Informe seu Peso: '))
 
 retornar_imc(altura, peso)
