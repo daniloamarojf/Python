@@ -21,18 +21,43 @@ firula()
 clientes = {}
 cadastro = []
 
-def cadastrar(cadastro):
-    codigo = str(input('Código: '))
-    nome = str(input('Nome: '))
-    altura = float(input('Altura: '))
-    peso = int(input('Peso: '))
-    cliente = {'codigo': codigo, 'nome': nome, 'altura': altura, 'peso': peso}
+def cadastrar():
+    clientes ['codigo'] = str(input('Código: '))
+    clientes ['nome'] = str(input('Nome: '))
+    clientes ['altura'] = float(input('Altura: '))
+    clientes ['peso'] = float(input('Peso: '))
+  
+    cadastro.append(clientes.copy())
     
-    cadastro.append(cliente)
-    
-    return(cadastro)
+    return()
 
+def listar_dados():
+    
+    for clientes in cadastro:
+        soma_altura += clientes ['altura']
+        soma_peso += clientes ['peso']
+        
+        media_altura = soma_altura/len(cadastro)
+    
+    
+    
+    
+    
+    
+    
+    
 cadastrar()
+
+
+
+
+
+
+
+
+
+
+
 '''while True:
     print('1 - Cadastrar')
     print('2 - Visualizar')
