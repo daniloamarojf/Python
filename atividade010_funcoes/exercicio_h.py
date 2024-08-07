@@ -39,17 +39,36 @@ def listar_dados():
         soma_peso += clientes ['peso']
         
         media_altura = soma_altura/len(cadastro)
-    
+
+        
+        
         print(f'Soma das alturas: {soma_altura}, media {media_altura}')
     
+def mostar_menu():
+    print('Escolha a opção:')
+    print('1 - Cadastrar')
+    print('2 - Mostar cadastro')
+    print('0 - sair') 
     
-    
-    
-    
-    
-cadastrar()
+    return()
 
-listar_dados()
+while True:
+    mostar_menu()
+    
+    opcao = input('Qual opção: ')
+    
+    if opcao == 0:
+        break
+    
+    elif opcao == 1:
+        cadastrar()
+        
+    else:
+        listar_dados() 
+    
+    
+    
+
 
 
 
