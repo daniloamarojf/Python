@@ -32,14 +32,15 @@ def cadastrar():
     return()
 
 def listar_dados():
-    
+    soma_altura = 0
+    soma_peso = 0
     for clientes in cadastro:
         soma_altura += clientes ['altura']
         soma_peso += clientes ['peso']
         
         media_altura = soma_altura/len(cadastro)
     
-    
+        print(f'Soma das alturas: {soma_altura}, media {media_altura}')
     
     
     
@@ -48,7 +49,7 @@ def listar_dados():
     
 cadastrar()
 
-
+listar_dados()
 
 
 
