@@ -14,11 +14,14 @@ print('-'*50)
 print('Dicionários')
 print('50'*50)
 
-def criar_dicionario(chave, valor):
+def criar_dicionario(lista1, lista2):
     dicionario = {}
-    dicionario = zip(chave, valor)
-    return(dicionario)
+    for chave, valor in zip(lista1, lista2):
+        dicionario [chave]= valor 
+    return dicionario
             
 lista1 = ['nome', 'peso', 'idade']
 lista2 = ['jhon', 40, 1.80]
+
+print(f'{criar_dicionario}')
 

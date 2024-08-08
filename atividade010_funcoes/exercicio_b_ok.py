@@ -1,12 +1,16 @@
 # Crie uma função que cadastre o nome de um aluno, a matrícula e a data de nascimento. 
 # Depois imprima os resultados cadastrados utilizando uma estrutura de repetição for.
 
+# Importando biblioteca
 import os
 
 
 os.system('cls')
+
+# Declarando dicionário vázio
 cadastro = {}
 
+# Criando função cadastrar aluno
 def cadastrar_aluno(aluno):
     nome = input('Nome: ')
     matricula = input('Matricula: ')

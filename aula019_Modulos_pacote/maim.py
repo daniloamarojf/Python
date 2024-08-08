@@ -1,8 +1,8 @@
 import os
 
-from pacote.modulo_somar import somar
-from pacote.subpacote.modulo _miltiplicar import multiplicar as multi
-from pacote.modulo_divisao import dividir
+from aula019_Modulos_pacote.modulo_somar import somar
+from aula019_Modulos_pacote.sub_pacote.modulo_multiplicar import multiplicar as multi
+from aula019_Modulos_pacote.modulo_divisao import dividir
 
 while True:
     os.system('cls')

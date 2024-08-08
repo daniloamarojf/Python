@@ -1,14 +1,17 @@
 # Crie uma função que receba a altura e o peso de uma pessoa. Depois retorne o seu IMC.
 
+# importando biblioteca
 import os
 
 
 os.system('cls')
 
+
 print('-'*50)
 print('Calculando o IMC')
 print('-'*50)
 
+# Criando função retornar imc
 def retornar_imc(altura, peso):
     
     imc = peso / (altura**2)
