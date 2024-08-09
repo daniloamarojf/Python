@@ -1,5 +1,4 @@
-def somar(a, b):
-    """Método para somar 2 números
+"""Método para somar 2 números
 
     Args:
         a (any): Parcela 1
@@ -7,6 +6,7 @@ def somar(a, b):
 
     Returns:
         Any: Soma das duas parcelas
-    """    
+    """   
+def somar(a, b):     
     soma = a + b
     return soma

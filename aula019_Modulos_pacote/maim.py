@@ -1,16 +1,16 @@
 import os
 
-from aula019_Modulos_pacote.modulo_somar import somar
-from aula019_Modulos_pacote.sub_pacote.modulo_multiplicar import multiplicar as multi
-from aula019_Modulos_pacote.modulo_divisao import dividir
+from pacote.modulo_somar import somar
+from pacote.sub_pacote.modulo_multiplicar import multiplicar as multi
+from pacote.modulo_divisao import dividir
 
 while True:
     os.system('cls')
     
     a = input('Entre com o valor de A:')
-    b = input('Entre com o valor de B ')
+    b = input('Entre com o valor de B: ')
     
-    if not a.replace('.','',1).isdigit() or not b.replace('.','',1).isdigit():
+    if not a.replace('.', '', 1).isdigit() or not b.replace('.', '', 1).isdigit():
         print("Por favor, entre com um número válido.")
         continue
     
