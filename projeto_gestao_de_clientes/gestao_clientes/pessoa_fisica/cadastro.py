@@ -1,32 +1,14 @@
+from gestao_clientes.pessoa_fisica.validacao import validar_cpf, validar_genero, validar_cep, validar_rua
+
+
+
+
+
 # Cadastro de Cliente Pessoa Fisica
 cpf_lista = []
 genero_lista = []
 
-def validar_cpf(cpf):
-    if not cpf.isdigit() or len(cpf) != 11:  
-        print('CPF inválido!')
-        cpf = input('CPF.............................................: ') # nã0 esta jogando na lista
-    else:
-        cpf_lista.append(cpf) 
-    return cpf
 
-def validar_genero(genero):
-    genero = str(input('Gênero M - Masculino | F - Feminino | O - Outros: ')).upper()
-        
-    if genero != 'M' or genero != 'F' or genero != 'o':
-       print('invalido...') 
-       genero = str(input('Gênero M - Masculino | F - Feminino | O - Outros: ')).upper() 
-    elif genero == 'M':
-        genero = 'Masculino'
-        genero_lista.append(genero)
-    elif genero == 'F':
-        genero = 'Feminino'
-        genero_lista.append(genero)
-    else:
-        genero = 'Outros'
-        genero_lista(genero)
-
-    return(genero)  
     
 def cadastro():  
     
@@ -41,29 +23,17 @@ def cadastro():
          
         
     cep_lista = []  
-    while True:
-        cep = input('CEP.......................: ')
-        posicao = cep.find('-')
-        
-        if (not cep.isdigit) or len(cep) != 9 or posicao != 5:
-            print('"CEP" invalido. Formato deve ser 00000-000') 
-            continue
-        
-        cep_lista.append(cep)
-        
-        break
+    
+    cep = input('CEP.......................: ')
+    validar_cep(cep)
 
     rua_lista = []
 
-    while True:           
-        rua = str(input('Rua: ')).capitalize()
-        if len(rua) == 0 or rua.isnumeric():
-            print('Digite o nome da rua') 
-            continue
+              
+    rua = str(input('Rua: ')).capitalize()
+    validar_rua(rua)
         
-        break
-        
-    numero = int(input('Numero: '))
+    numero = (input('Numero: '))
 
     complemeto = str(input('Complemento: '))
     bairro = input('Bairro: ')
