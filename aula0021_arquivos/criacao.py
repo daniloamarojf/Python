@@ -12,7 +12,7 @@ lista = [
 ]
 
 # Caminho para a pasta onde o csv será salvo
-pasta = 'arquivo_csv/garvacao/'
+pasta = 'arquivo_csv/gravacao/'
 
 # Verificando se a pasta existe, se não, irá criá-la
 os.makedirs(pasta, exist_ok=True)
@@ -21,7 +21,7 @@ os.makedirs(pasta, exist_ok=True)
 arquivo = 'arquivo_csv/gravacao/alunas.csv'
 
 # Camnho completo para o arquivo CSV
-caminho_arquivo = os. path.join(pasta, arquivo)
+caminho_arquivo = os.path.join(pasta, arquivo)
 
 # Abre o arqruivo 'arquivo' no modo de escrita ('w')
 # Se o arquivo não existir, ele será criado; se existir será truncado (esvaziado)
@@ -31,7 +31,7 @@ with open(arquivo, 'w', newline='') as arquivo_csv:
     
     # campos = ['nome', 'telefone', 'cidade']: Define a lista de nomes de campos
     # (cabeçalho das colunas  do CSV).
-    campos = ['nomes', 'telefone', 'cidade']
+    campos = ['nome', 'telefone', 'cidade']
     
     # writer = csv.DictWhiter(arquivo_csv, fieldnames=campos):
     # Criar um objeto DictWhiter que usará arquivi_csv para gravar os campos
@@ -49,6 +49,4 @@ with open(arquivo, 'w', newline='') as arquivo_csv:
     
 os.system('cls')
 # Exibe uma mensagem indicando que o arquivo foi gravado com sucesso
-print(f'Arquivo {arquivo} gravdo com sucesso!')
-    
-
+print(f'Arquivo {arquivo} gravado com sucesso!')
