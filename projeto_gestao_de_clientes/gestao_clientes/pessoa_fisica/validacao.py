@@ -1,40 +1,40 @@
 def validar_cpf(cpf):
-    cpf_lista = []
-    if not cpf.isdigit() or len(cpf) != 11:  
-        print('CPF inválido!')
-        cpf = input('CPF.............................................: ') 
-        cpf_lista.append(cpf) 
+    while True:
+        if not cpf.isdigit() or len(cpf) != 11:  
+            print('CPF inválido!')
+            cpf = input('CPF.............................................: ')
+            continue
+        else:
+            break    
     return cpf
 
 def validar_genero(genero):
-    genero_lista = []
-        
-    if genero != 'M' or genero != 'F' or genero != 'o':
-       print('invalido...') 
-       genero = str(input('Gênero M - Masculino | F - Feminino | O - Outros: ')).upper() 
-    elif genero == 'M':
-        genero = 'Masculino'
-        genero_lista.append(genero)
-    elif genero == 'F':
-        genero = 'Feminino'
-        genero_lista.append(genero)
-    else:
-        genero = 'Outros'
-        genero_lista(genero)
-
+    while True:
+       
+        if genero == 'M':
+            genero = 'Masculino'
+            break
+        elif genero == 'F':
+            genero = 'Feminino'
+            break
+        elif genero == 'O':
+            genero = 'Outros'
+            break
+        else:
+            print('invalido...') 
+            genero = str(input('Gênero M - Masculino | F - Feminino | O - Outros: ')).upper() 
+            continue    
     return genero  
 
 def validar_cep(cep):
-    cep_lista = []  
-    
     posicao = cep.find('-')
-        
-    if (not cep.isdigit) or len(cep) != 9 or posicao != 5:
-        print('"CEP" invalido. Formato deve ser 00000-000') 
-    else:
-        
-        cep_lista.append(cep)
-        
+    while True:
+        if (not cep.isdigit) or len(cep) != 9 or posicao != 5:
+            print('"CEP" invalido. Formato deve ser 00000-000')
+            cep = input('CEP.......................: ')
+            continue 
+        else:
+            break
     return cep
 
 def validar_rua(rua):

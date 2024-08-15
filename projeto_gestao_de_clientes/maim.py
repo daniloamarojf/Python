@@ -1,8 +1,8 @@
 import os
 
-from gestao_clientes.pessoa_fisica.cadastro import cadastro
 
 os.system('cls')
+from gestao_clientes.pessoa_fisica.cadastro import cadastro
 
 print('Tipo de cliente: [1] Pessoa física [2] Pessoa juridica')
 print()

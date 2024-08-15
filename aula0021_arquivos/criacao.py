@@ -20,7 +20,7 @@ os.makedirs(pasta, exist_ok=True)
 # Nome para o arquivo CSV para gravar as informações
 arquivo = 'arquivo_csv/gravacao/alunas.csv'
 
-# Camnho completo para o arquivo CSV
+# Caminho completo para o arquivo CSV
 caminho_arquivo = os.path.join(pasta, arquivo)
 
 # Abre o arqruivo 'arquivo' no modo de escrita ('w')

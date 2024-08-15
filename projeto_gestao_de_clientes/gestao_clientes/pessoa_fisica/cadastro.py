@@ -1,37 +1,36 @@
+import os
+
+
+os.system('cls')
+
 from gestao_clientes.pessoa_fisica.validacao import validar_cpf, validar_genero, validar_cep, validar_rua
-
-
-
 
 
 # Cadastro de Cliente Pessoa Fisica
 cpf_lista = []
 genero_lista = []
-
-
+cep_lista = []
+rua_lista = []
     
 def cadastro():  
     
     nome = str(input('Nome............................................: '))
 
-    cpf_lista = []
     cpf = input('CPF.............................................: ')
     validar_cpf(cpf)
-
+    cpf_lista.append(cpf)
+    
     genero = str(input('Gênero M - Masculino | F - Feminino | O - Outros: ')).upper()
     validar_genero(genero)
+    genero_lista.append(genero)
          
-        
-    cep_lista = []  
-    
     cep = input('CEP.......................: ')
     validar_cep(cep)
-
-    rua_lista = []
-
-              
+    cep_lista.appende(cep)
+         
     rua = str(input('Rua: ')).capitalize()
     validar_rua(rua)
+    rua_lista.append(rua)
         
     numero = (input('Numero: '))
 
@@ -45,3 +44,5 @@ def cadastro():
     return()
 
     # perguntas para perfil do cliente
+    
+cadastro()
