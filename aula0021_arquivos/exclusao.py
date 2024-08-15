@@ -8,8 +8,8 @@ arquivo = 'arquivos_csv/gravacao/alunas.csv'
 nome_para_apagar = input('Digite o nome que deseja apagar:')
 
 # Lendo os dados do arquivo
-with open(arquivo, 'r') as arquivos_csv:   # erro#######
-    leitura = csv.DictReader(arquivos_csv, delimiter=';')
+with open(arquivo, 'r') as arquivo_csv:   
+    leitura = csv.DictReader(arquivo_csv, delimiter=';')
     cadastro = list(leitura)
     
 # Verificando se o nome existe e apagando o registro
@@ -23,7 +23,7 @@ if len(novo_cadastro) < len(cadastro):
 # Reescrevendo o arquivo com os dados atualizados
 with open(arquivo, 'w', newline='') as aquivos_csv:
     campos = ['nomes', 'telefone','cidade']
-    escrever = csv.DictWriter(arquivos_csv, fieldnames=campos, delimiter=';')
+    escrever = csv.DictWriter(arquivo_csv, fieldnames=campos, delimiter=';')
     
     escrever.writeheader()
     escrever.writerows(novo_cadastro)
