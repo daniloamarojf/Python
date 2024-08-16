@@ -14,6 +14,7 @@ with open(arquivo, 'r') as arquivo_csv:
     
 # Verificando se o nome existe e apagando o registro
 apagado = False
+# Cria um novo arquivo sem o nome que eu quer apagar
 novo_cadastro = [registro for registro in cadastro \
                  if registro['nome'] != nome_para_apagar]
 
@@ -21,8 +22,8 @@ if len(novo_cadastro) < len(cadastro):
     apagado = True
     
 # Reescrevendo o arquivo com os dados atualizados
-with open(arquivo, 'w', newline='') as aquivos_csv:
-    campos = ['nomes', 'telefone','cidade']
+with open(arquivo, 'w', newline='') as arquivo_csv:
+    campos = ['nome', 'telefone','cidade']
     escrever = csv.DictWriter(arquivo_csv, fieldnames=campos, delimiter=';')
     
     escrever.writeheader()

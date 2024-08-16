@@ -12,13 +12,13 @@ lista = [
 ]
 
 # Caminho para a pasta onde o csv será salvo
-pasta = 'arquivo_csv/gravacao/'
+pasta = 'arquivos_csv/gravacao/'
 
 # Verificando se a pasta existe, se não, irá criá-la
 os.makedirs(pasta, exist_ok=True)
 
 # Nome para o arquivo CSV para gravar as informações
-arquivo = 'arquivo_csv/gravacao/alunas.csv'
+arquivo = 'arquivos_csv/gravacao/alunas.csv'
 
 # Caminho completo para o arquivo CSV
 caminho_arquivo = os.path.join(pasta, arquivo)
@@ -34,13 +34,13 @@ with open(arquivo, 'w', newline='') as arquivo_csv:
     campos = ['nome', 'telefone', 'cidade']
     
     # writer = csv.DictWhiter(arquivo_csv, fieldnames=campos):
-    # Criar um objeto DictWhiter que usará arquivi_csv para gravar os campos
+    # Criar um objeto DictWhiter que usará arquivo_csv para gravar os campos
     # Fieldnames define a ordem dos campos do arquivo csv.
     # delimiter= ';' : é o separador
     escrever = csv.DictWriter(arquivo_csv, fieldnames=campos, delimiter=';')
     
     # Writer.writeheader(): GRava a linha do cabeçalho no
-    # arqeuivo csv usandoos nomes de campos definidos em fieldnames.
+    # arquivo csv usandos nomes de campos definidos em fieldnames.
     escrever.writeheader()
     
     # Writer.writerows(): GRava todas as linhas da linha n arquivo csv
