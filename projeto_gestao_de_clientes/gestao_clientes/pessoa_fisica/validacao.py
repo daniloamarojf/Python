@@ -27,8 +27,9 @@ def validar_genero(genero):
     return genero  
 
 def validar_cep(cep):
-    posicao = cep.find('-')
+    
     while True:
+        posicao = cep.find('-')
         if (not cep.isdigit) or len(cep) != 9 or posicao != 5:
             print('"CEP" invalido. Formato deve ser 00000-000')
             cep = input('CEP.......................: ')

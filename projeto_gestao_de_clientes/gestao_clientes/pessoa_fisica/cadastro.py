@@ -26,7 +26,7 @@ def cadastro():
          
     cep = input('CEP.......................: ')
     validar_cep(cep)
-    cep_lista.appende(cep)
+    cep_lista.append(cep)
          
     rua = str(input('Rua: ')).capitalize()
     validar_rua(rua)
