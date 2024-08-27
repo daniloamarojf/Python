@@ -1,9 +1,9 @@
 import os
+from gestao_clientes.pessoa_fisica.validacao import validar_cpf, validar_genero, validar_cep, validar_rua
 
 
 os.system('cls')
 
-from gestao_clientes.pessoa_fisica.validacao import validar_cpf, validar_genero, validar_cep, validar_rua
 
 
 # Cadastro de Cliente Pessoa Fisica
@@ -41,7 +41,7 @@ def cadastro():
     data_nascimento = str(input('Data de nascimento: '))
     email = str(input('E-mail:'))
 
-    return()
+    
 
     # perguntas para perfil do cliente
     
