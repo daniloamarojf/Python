@@ -1,24 +1,22 @@
 import os
 from gestao_clientes.pessoa_fisica import cadastro
 
+
 os.system('cls')
 
-
-
-# Condição para escolher se é cliente fisico ou juridico
 while True:
-    print('Tipo de cliente: [1] Pessoa física [2] Pessoa juridica')
+    print('Tipo de clinete: [1] Pessoa Física [2] Pessoa Juridica')
     print()
-    cliente = (input('Tipo cliente....................................: '))
-    
-    
+    cliente = input('Tipo clinte......................................: ')
     
     if cliente == '1' or cliente == '2':
-        if cliente == 1:
+        if cliente == '1':
             cadastro()
         else:
-            cliente = "Pessoa Juridica"
-         
+            cliente = 'Pessoa Juridica'
+            
     else:
-        print('Digite 1 para pessoa física ou 2 para pessoa juridica')
-    break
+        print('Digite 1 para pessoa fisica ou 2 para pessoa juridica')
+        
+        break
+    
